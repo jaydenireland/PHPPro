@@ -1,16 +1,5 @@
 {
   "name": "php-pro",
-  "build": {
-    "extraResources": [
-      {
-        "from": "./src/php",
-        "to": "php",
-        "filter": [
-          "**/*"
-        ]
-      }
-    ]
-  },
   "version": "1.0.0",
   "description": "An Electron application with Vue and TypeScript",
   "main": "./out/main/index.js",
@@ -24,7 +13,7 @@
     "typecheck": "npm run typecheck:node && npm run typecheck:web",
     "start": "electron-vite preview",
     "dev": "npm run php:install && electron-vite dev",
-    "php:install": "cd public/php && composer install --prefer-dist",
+    "php:install": "cd resources/php && composer install --prefer-dist",
     "build": "npm run typecheck && npm run php:install && electron-vite build",
     "postinstall": "electron-builder install-app-deps",
     "build:win": "npm run build && electron-builder --win --config",

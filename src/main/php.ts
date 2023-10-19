@@ -6,7 +6,8 @@ export const run = async (code: string) => {
   return new Promise(async (resolve, reject) => {
     const php = await NodePHP.load('8.0')
 
-    php.mount(path.join(app.getAppPath(), 'resources', 'php'), '/home/runner')
+    const phpSource = path.join(app.getAppPath(), 'resources', 'php').replace('app.asar', 'app.asar.unpacked')
+    php.mount(phpSource, '/home/runner')
 
     const res = await php.run({
       code: `<?php
