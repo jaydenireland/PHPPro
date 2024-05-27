@@ -25,6 +25,7 @@
     "@electron-toolkit/utils": "^2.0.0",
     "@php-wasm/node": "^0.2.0",
     "electron-updater": "^6.1.1",
+    "lodash": "^4.17.21",
     "monaco-editor": "^0.43.0",
     "vue-markdown-render": "^2.0.1"
   },
