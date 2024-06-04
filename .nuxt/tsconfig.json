@@ -87,7 +87,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/72554fe2-460d-4ff1-9373-f13009817c76.json"
+        "./manifest/meta/dev.json"
       ],
       "#build": [
         "."
@@ -120,7 +120,6 @@
   },
   "include": [
     "./nuxt.d.ts",
-    "../.config/nuxt.*",
     "../**/*",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/telemetry/runtime",

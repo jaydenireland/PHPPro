@@ -13,7 +13,7 @@ watch(code, _.debounce((newCode) => {
     output.value = '';
     return;
   }
-
+  output.value = '';
   php.run(newCode);
   const compressed = gzip(newCode);
   const base64 = btoa(String.fromCharCode(...new Uint8Array(compressed)));
@@ -22,7 +22,7 @@ watch(code, _.debounce((newCode) => {
 }, 200));
 
 php.addEventListener('output', (event: any) => {
-  output.value = event.detail.toString();
+  output.value += event.detail.toString();
 });
 
 onMounted(() => {
@@ -44,7 +44,7 @@ onMounted(() => {
   <div class="w-screen h-screen grid grid-cols-2">
     <ClientOnly>
       <Editor :init="code" @input="(val) => (code = val)" class="overflow-scroll"/>
-      <OutputRender :src="output" class="overflow-scroll"/>
+      <div v-html="output" class="overflow-scroll bg-black text-white py-8 px-2"/>
     </ClientOnly>
   </div>
 </template>

@@ -1,7 +1,6 @@
 
 interface _GlobalComponents {
       'Editor': typeof import("../components/Editor.vue")['default']
-    'OutputRender': typeof import("../components/OutputRender.vue")['default']
     'Repl': typeof import("../components/Repl.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -25,7 +24,6 @@ interface _GlobalComponents {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
       'LazyEditor': typeof import("../components/Editor.vue")['default']
-    'LazyOutputRender': typeof import("../components/OutputRender.vue")['default']
     'LazyRepl': typeof import("../components/Repl.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -63,7 +61,6 @@ declare module 'vue' {
 }
 
 export const Editor: typeof import("../components/Editor.vue")['default']
-export const OutputRender: typeof import("../components/OutputRender.vue")['default']
 export const Repl: typeof import("../components/Repl.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -87,7 +84,6 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyEditor: typeof import("../components/Editor.vue")['default']
-export const LazyOutputRender: typeof import("../components/OutputRender.vue")['default']
 export const LazyRepl: typeof import("../components/Repl.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']

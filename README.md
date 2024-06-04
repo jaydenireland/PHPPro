@@ -10,8 +10,6 @@ Features
     
 *   **Code Compression**: Compresses code and encodes it in the URL for easy sharing.
     
-*   **Markdown Rendering**: Renders output using vue-markdown-render.
-    
 *   **Tailwind CSS**: Styled with Tailwind CSS for a modern UI.
     
 

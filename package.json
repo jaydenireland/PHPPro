@@ -15,7 +15,6 @@
     "nuxt": "^3.11.2",
     "pako": "^2.1.0",
     "vue": "^3.4.27",
-    "vue-markdown-render": "^2.2.1",
     "vue-router": "^4.3.2"
   },
   "optionalDependencies": {
