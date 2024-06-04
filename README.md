@@ -1,35 +1,48 @@
-# PHPPro
+PHPPro
+======
+PHPPro is a web-based PHP playground built with Nuxt 3 and Vue 3. 
+It allows users to write, run, and share PHP code snippets in a browser environment using PHP-WASM.
 
-An application for testing PHP code inspired by [RunJS](https://runjs.app/).
+Features
+--------
 
-![Screenshot](https://user-images.githubusercontent.com/719397/276782581-4267961b-4c76-4772-b669-2370ade7630d.png)
-## Things to note
-1. Uses [@php-wasm/node](https://www.npmjs.com/package/@php-wasm/node) for php evaluation. Locked to version 8.0.10 for now.
-2. Any statement that doesn't output will be wrapped in a var_dump.
+*   **Live PHP Code Execution**: Write and execute PHP code directly in the browser.
+    
+*   **Code Compression**: Compresses code and encodes it in the URL for easy sharing.
+    
+*   **Markdown Rendering**: Renders output using vue-markdown-render.
+    
+*   **Tailwind CSS**: Styled with Tailwind CSS for a modern UI.
+    
 
-## Recommended IDE Setup
+Technologies Used
+-----------------
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
+*   **Nuxt 3**: Framework for Vue 3 applications.
+    
+*   **Vue 3**: Progressive JavaScript framework.
+    
+*   **PHP-WASM**: WebAssembly version of PHP.
+    
+*   **Tailwind CSS**: Utility-first CSS framework.
+    
+*   **Lodash**: JavaScript utility library.
+    
+*   **Pako**: JavaScript library for zlib/gzip compression.
 
-## Project Setup
+Usage
+-----
 
-### Install
+1. **Write PHP Code**: Use the editor to write PHP code.
+2. **Run Code**: The code is executed in real-time using PHP-WASM.
+3. **Share Code**: The code is compressed and encoded in the URL for easy sharing.
 
-```bash
-$ npm install
-```
+License
+-------
 
-### Development
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-```bash
-$ npm run dev
-```
+Contributing
+------------
 
-### Build
-
-```bash
-
-# For macOS
-$ npm run build:mac
-
-```
+Contributions are welcome! Please open an issue or submit a pull request.
