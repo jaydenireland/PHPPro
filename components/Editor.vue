@@ -4,14 +4,20 @@ import * as monaco from 'monaco-editor';
 
 const editor = ref<HTMLDivElement | null>(null);
 const emits = defineEmits(['input']);
-const props = defineProps(['init']);
+const props = defineProps({
+  init: String,
+  light: {
+    type: Boolean,
+    default: true
+  }
+});
 
 onMounted(() => {
   if (editor.value) {
     const editorInstance = monaco.editor.create(editor.value, {
       value: '',
       language: 'php',
-      theme: 'vs-dark',
+      theme: props.light ? 'vs-light' : 'vs-dark',
       automaticLayout: true,
     });
 

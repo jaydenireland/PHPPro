@@ -38,6 +38,7 @@ onMounted(() => {
     code.value = decompressed;
   }
 });
+
 </script>
 
 <template>
